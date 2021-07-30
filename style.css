@@ -138,3 +138,43 @@
 	width: 100%;
 	border-radius: 100px;
 }
+
+
+/* --- MEDIA QUERIES --- */
+@media screen and (max-width: 1200px) {
+	
+
+	.header .container-logo .logo span {
+		display: none;
+	}
+
+	.header .search-bar input {
+		min-width: 70%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.container {
+		grid-template-rows: auto;
+	}
+
+	.header {
+		padding: 20px;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+		grid-template-areas: "logo icons"
+							 "search search";
+	}
+
+	.header .container-logo .logo span {
+		display: inline;
+	}
+
+	.header .search-bar input {
+		min-width: auto;
+		width: 100%;
+	}
+}
+
+
