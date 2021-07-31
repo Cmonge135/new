@@ -139,6 +139,28 @@
 	border-radius: 100px;
 }
 
+/* --- SIDE MENU --- */
+.side-menu {
+	grid-area: menu;
+	background: #fff;
+	overflow: hidden;
+}
+
+.side-menu a {
+	display: block;
+	padding: 15px 35px;
+	color: #000;
+	min-width: 800px;
+}
+
+.side-menu a:hover {
+	background: #e5e5e5;
+}
+
+.menu-lateral a.active {
+	background: #e5e5e5;
+	font-weight: bold;
+}
 
 /* --- MEDIA QUERIES --- */
 @media screen and (max-width: 1200px) {
